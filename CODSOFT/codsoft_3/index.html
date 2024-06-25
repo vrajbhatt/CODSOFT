@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <form name="form">
+          <input type="text" name="inputValue" id="inputText" />
+        </form>
+        <div class="btns">
+          <table>
+            <tr>
+              <td>
+                <input
+                  type="button"
+                  data-info="C"
+                  value="C"
+                  onclick="clean()"
+                />
+              </td>
+              <td>
+                <input
+                  type="button"
+                  data-info="del"
+                  value="del"
+                  onclick="back()"
+                />
+              </td>
+              <td>
+                <input type="button" class="btn-op" data-op="%" value="%" />
+              </td>
+              <td>
+                <input type="button" class="btn-op" data-op="+" value="+" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="button" class="btn" data-info="7" value="7" />
+              </td>
+              <td>
+                <input type="button" class="btn" data-info="8" value="8" />
+              </td>
+              <td>
+                <input type="button" class="btn" data-info="9" value="9" />
+              </td>
+              <td>
+                <input type="button" class="btn-op" data-op="*" value="*" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="button" class="btn" data-info="4" value="4" />
+              </td>
+              <td>
+                <input type="button" class="btn" data-info="5" value="5" />
+              </td>
+              <td>
+                <input type="button" class="btn" data-info="6" value="6" />
+              </td>
+              <td>
+                <input type="button" class="btn-op" data-op="-" value="-" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="button" class="btn" data-info="1" value="1" />
+              </td>
+              <td>
+                <input type="button" class="btn" data-info="2" value="2" />
+              </td>
+              <td>
+                <input type="button" class="btn" data-info="3" value="3" />
+              </td>
+              <td>
+                <input type="button" class="btn-op" data-op="/" value="/" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="button" class="btn-op" data-op="." value="." />
+              </td>
+              <td>
+                <input type="button" class="btn" data-info="0" value="0" />
+              </td>
+              <td colspan="2">
+                <input
+                  type="button"
+                  data-info="="
+                  value="="
+                  onclick="equal()"
+                />
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
